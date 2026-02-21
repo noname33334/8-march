@@ -1,0 +1,116 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeDown 1.5s ease;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    color: #fff;
+}
+
+header p {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* BUTTON SECTION */
+.buttons {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.buttons h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    animation: fadeUp 1.5s ease;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 18px 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: pulse 2s infinite;
+}
+
+/* BUTTON COLORS */
+.btn-love {
+    background: #ff4b5c;
+}
+
+.btn-music {
+    background: #ff7eb3;
+}
+
+.btn-gifts {
+    background: #ff6a88;
+}
+
+.btn-photos {
+    background: #ff8fab;
+}
+
+/* HOVER EFFECT */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(255,255,255,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    }
+}
